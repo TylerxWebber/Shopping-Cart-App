@@ -1,10 +1,13 @@
 @media (min-width: 1200px){
-    #quantity {
-        width: 30%;
+    .quantity {
+        width: 40% !important;
     }
 }
 @media (min-width: 1200px){
     #product {
+        width: 50%;
+    }
+    #item-price {
         width: 50%;
     }
 }

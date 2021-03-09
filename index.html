@@ -31,34 +31,37 @@
       <h2>Quantity</h2>
     </div>
   </div>
-  <div id="shopping-cart" class="row">   <!--Shopping cart Items & cost & quantity/total cost-->
-    <div class="col-xs-4">
-      <h3>Salmon</h3>
-    </div>
-    <div class="col-xs-4">
-      <h3>$10.00</h3>
-    </div>
-    <div class="col-xs-4"> 
-     <form class="form-inline"><h3>QTY<input type="text" id="quantity" class="form-control" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span id="items-total-price"> $0.00</span></h3></form>
-    </div>
-  </div>
-    <div id="shopping-cart" class="row">   <!--Shopping cart Items & cost & quantity/total cost-->
+  <div id="shopping-cart" class="container">
+    <div class="row">   <!--Shopping cart Items & cost & quantity/total cost-->
       <div class="col-xs-4">
-        <h3>Saldmon</h3>
+        <h3 class="item-name">Salmon</h3>
       </div>
       <div class="col-xs-4">
-        <h3>$10.00</h3>
+        <h3 class="item-price">$10.00</h3>
       </div>
       <div class="col-xs-4"> 
-       <form class="form-inline"><h3>QTY<input type="text" id="quantity" class="form-control" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span id="items-total-price"> $0.00</span></h3></form>
+        <form class="form-inline"><h3>QTY<input type="text" class="form-control quantity" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span class="item-subtotal"> $0.00</span></h3></form>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-4">
+          <h3 class="item-name">Cod</h3>
+        </div>
+        <div class="col-xs-4">
+          <h3 class="item-price">$12.00</h3>
+        </div>
+        <div class="col-xs-4"> 
+          <form class="form-inline"><h3>QTY<input type="text" class="form-control quantity" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span class="item-subtotal"> $0.00</span></h3></form>
+        </div>
+      </div>
+    </div> 
+  </div>   
   <div class="row">
     <div class="col-xs-4">
       <input id="product" type="text" class="form-control" placeholder="Food">
     </div>
     <div class="col-xs-4">
-      <input id="item-price" type="text" class="form-control" placeholder="$0.00">
+      <input id="item-cost" type="text" class="form-control" placeholder="$0.00">
     </div>
     <div class="col-xs-4">
       <button id="create" class="btn btn-sm btn-default">Create Item</button> 
