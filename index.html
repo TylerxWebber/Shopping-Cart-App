@@ -15,6 +15,59 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-
+<div class="container">
+<div class="row">
+  <div class="col-xs-12">
+    <h1 class="text-center"><strong>Shopping Cart</strong></h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <h2>Product</h2>
+    </div>
+    <div class="col-xs-4">
+      <h2>Item Price</h2>
+    </div>
+    <div class="col-xs-4">
+      <h2>Quantity</h2>
+    </div>
+  </div>
+  <div id="shopping-cart" class="container">
+    <div class="row">   <!--Shopping cart Items & cost & quantity/total cost-->
+      <div class="col-xs-4">
+        <h3 class="item-name">Salmon</h3>
+      </div>
+      <div class="col-xs-4">
+        <h3 class="item-price">$10.00</h3>
+      </div>
+      <div class="col-xs-4"> 
+        <form class="form-inline"><h3>QTY<input type="text" class="form-control quantity" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span class="item-subtotal"> $0.00</span></h3></form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+          <h3 class="item-name">Cod</h3>
+        </div>
+        <div class="col-xs-4">
+          <h3 class="item-price">$12.00</h3>
+        </div>
+        <div class="col-xs-4"> 
+          <form class="form-inline"><h3>QTY<input type="text" class="form-control quantity" placeholder="0"><button class="btn btn-default remove" type="submit">Remove</button><span class="item-subtotal"> $0.00</span></h3></form>
+        </div>
+      </div>
+    </div> 
+  </div>   
+  <div class="row">
+    <div class="col-xs-4">
+      <input id="product" type="text" class="form-control" placeholder="Food">
+    </div>
+    <div class="col-xs-4">
+      <input id="item-cost" type="text" class="form-control" placeholder="$0.00">
+    </div>
+    <div class="col-xs-4">
+      <button id="create" class="btn btn-sm btn-default">Create Item</button> 
+    </div>
+  </div>
+  <h1><strong>Total Price:</strong><span id="total-price"> $0.00</span></h1>
+</div>
   </body>
 </html>
